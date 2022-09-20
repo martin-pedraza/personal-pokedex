@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <%- include('./partials/head') %>
+  <body class="background w-100 h-100">
+
+    <%- include('./partials/nav') %>
+
+    <header class="text-center w-100 position-absolute">
+      <button class="buttonIntro w-25 py-2 rounded-pill fw-bold position-relative my-4 mx-2 bg-transparent overflow-hidden" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <span class="bg-light h-100 rounded-pill position-absolute bottom-0 start-0"></span>INTRO
+      </button>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/6xKWiCMKKJg?controls=0"></iframe>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  </body>
+</html>
