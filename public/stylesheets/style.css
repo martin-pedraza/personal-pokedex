@@ -1,0 +1,80 @@
+.background{
+    background: url('./../img/background.jpg') no-repeat fixed center; 
+    background-size: cover;
+}
+
+/*Header tags*/
+header{
+    top: 60%;
+}
+
+header .buttonIntro{
+    border: 2px solid white;
+    color: white;
+    transition: all 0.5s;
+}
+
+header .buttonIntro:hover{
+    border: none;
+    color: black;
+}
+
+header .buttonIntro span{
+    width: 0%;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+header .buttonIntro:hover span{
+    width: 100%;
+}
+
+/*Nav tags*/
+nav .hamburguer-button:hover{
+    transform: rotateZ(-45deg);
+}
+
+nav .typesHome{
+    text-decoration: none;
+    color: black;
+}
+
+nav .typesHome:hover:after{
+    content: ' - HOME';
+    text-decoration: none;
+    color: black;
+}
+
+nav .typesHome:hover{
+    color: black;
+}
+
+nav ul li{
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a:hover{
+    color: black;
+}
+
+nav ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: black;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    transition: 0.5s;
+}
+
+nav ul li:hover::after{
+    width: 100%;
+}
