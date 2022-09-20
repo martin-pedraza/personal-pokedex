@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>listado</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1>Pokemon</h1>
-    <p>Welcome to lista</p>
+
+  <%- include('./partials/head') %>
+
+  <body style="background-color: black;">
+
+    <%- include('./partials/nav') %>
+
+    <h1 style="color: white;"><%= pokemonType %></h1>
+
+    <%- include('./partials/footer') %>
+
   </body>
 </html>
