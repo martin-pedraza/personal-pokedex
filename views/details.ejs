@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+  <%- include('./partials/head') %>
+
+  <body style="background-color: black;">
+
+    <%- include('./partials/nav') %>
+
+    <h1 style="color: white;"><%= pokemonDetail.name %></h1>
+    <img src="/<%=pokemonDetail.img%>" alt="pokemon">
+    <span><%= pokemonDetail.type[0] %></span>
+
+    <%- include('./partials/footer') %>
+
+  </body>
+</html>

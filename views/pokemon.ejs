@@ -3,11 +3,22 @@
 
   <%- include('./partials/head') %>
 
-  <body style="background-color: black;">
+  <body style="background-color: black;" class="container">
 
     <%- include('./partials/nav') %>
 
-    <h1 style="color: white;"><%= pokemonType %></h1>
+    <main class="d-flex justify-content-around flex-wrap">
+      <% for (let i=0; i<pokemonType.length; i++) { %>
+
+      <a class="card mt-5 bg-transparent text-decoration-none" style="width: 18rem;">
+        <img src="/<%=pokemonType[i].img%>" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text text-center fs-1 fw-bold text-white"><%=pokemonType[i].name %></p>
+        </div>
+      </a>
+        
+      <% } %>
+    </main>
 
     <%- include('./partials/footer') %>
 
