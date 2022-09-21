@@ -111,10 +111,6 @@ main .card:before{
     transform: rotate(-20deg) translateX(-100px);
 }
 
-main .card:hover:before{
-    transform: rotate(-20deg) translate(30rem, 70px);
-}
-
 /*Section tags*/
 section .card-text{
     display: block;
@@ -141,5 +137,11 @@ section .card-body:hover .description{
 @media (max-width: 768px) and (orientation: landscape){
     section .img-fluid{
         display: none;
+    }
+}
+
+@media (min-width: 1200px){ 
+    main .card:hover:before{
+        transform: rotate(-20deg) translate(30rem, 70px);
     }
 }
