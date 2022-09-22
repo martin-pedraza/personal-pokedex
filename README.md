@@ -8,14 +8,14 @@ The deployment was made with Railway. The URL is <a href="https://personal-poked
 
 For the installation you need to execute the following command:
 
-```
+```js
 npm install
 ```
 
 ## Usage
 Once the installation is complete, you can run the project with the following command:
 
-```
+```js
 npm start
 ```
 
